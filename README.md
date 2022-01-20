@@ -106,4 +106,4 @@ There are a number of helpful extension methods that help you build your full br
 
 ### Overriding the default look
 
-Create a directory in your project at the path Views/Shared/Components/BreadCrumbs (in your views/shared folder create a Components subdirectory and then a BreadCrumbs subdirectory).  Copy the Views/Shared/Components/BreadCrumbs/Default.cshtml file from this project into that directory and customize how you wish.
+Create a directory in your project at the path Views/Shared/Components/BreadCrumbs (in your views/shared folder create a Components subdirectory and then a BreadCrumbs subdirectory).  Copy the [Views/Shared/Components/BreadCrumbs/Default.cshtml](https://raw.githubusercontent.com/RoverCore/RoverCoreBreadCrumbs/main/RoverCore.BreadCrumbs/Views/Shared/Components/BreadCrumbs/Default.cshtml) file from this project into that directory and customize how you wish.

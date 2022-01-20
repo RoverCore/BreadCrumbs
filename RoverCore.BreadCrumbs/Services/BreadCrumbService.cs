@@ -22,8 +22,17 @@ public class BreadCrumbService : IBreadCrumbService
         Add("Home");
     }
 
+    /// <summary>
+    /// Adds a default breadcrumb with title and no link
+    /// </summary>
+    /// <param name="title"></param>
     public void Default(string title) => Default(title, "");
 
+    /// <summary>
+    /// Adds a default breadcrumb with title and url
+    /// </summary>
+    /// <param name="title"></param>
+    /// <param name="url"></param>
     public void Default(string title, string url)
     {
         BreadCrumbs.Clear();

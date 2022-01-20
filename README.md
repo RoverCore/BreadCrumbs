@@ -43,6 +43,52 @@ public class DashboardController : Controller
 
 ```
 
+### Building your trail
+
+There are a number of helpful extension methods that help you build your full breadcrumb trail fluently.  See the following:
+
+```cs
+    public static IBreadCrumbService StartAt(this IBreadCrumbService breadCrumbService, string title)
+    
+    public static IBreadCrumbService StartAt(this IBreadCrumbService breadCrumbService, string title, string url)
+    
+    public static IBreadCrumbService StartAtAction(this IBreadCrumbService breadCrumbService, string title, string? action = default,
+        string? controller = default,
+        object? values = default,
+        PathString? pathBase = default,
+        FragmentString fragment = default,
+        LinkOptions? options = default)
+
+    public static IBreadCrumbService StartAtPage(this IBreadCrumbService breadCrumbService, string title,
+        string? page = default,
+        string? handler = default,
+        object? values = default,
+        PathString? pathBase = default,
+        FragmentString fragment = default,
+        LinkOptions? options = default)
+
+    public static IBreadCrumbService Then(this IBreadCrumbService breadCrumbService, string title)
+
+    public static IBreadCrumbService Then(this IBreadCrumbService breadCrumbService, string title, string url)
+
+    public static IBreadCrumbService ThenAction(this IBreadCrumbService breadCrumbService, string title,
+        string? action = default,
+        string? controller = default,
+        object? values = default,
+        PathString? pathBase = default,
+        FragmentString fragment = default,
+        LinkOptions? options = default)
+
+    public static IBreadCrumbService ThenPage(this IBreadCrumbService breadCrumbService, string title,
+        string? page = default,
+        string? handler = default,
+        object? values = default,
+        PathString? pathBase = default,
+        FragmentString fragment = default,
+        LinkOptions? options = default)
+```
+
+
 ### Overriding the default look
 
 Create a directory in your project at the path Views/Shared/Components/BreadCrumbs (in your views/shared folder create a Components subdirectory and then a BreadCrumbs subdirectory).  Copy the Views/Shared/Components/BreadCrumbs/Default.cshtml file from this project into that directory and customize how you wish.

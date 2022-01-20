@@ -16,6 +16,18 @@ After you have setup your breadcrumbs you must add the breadcrumbs service:
 services.AddScoped<IBreadCrumbService, BreadCrumbService>();
 ```
 
+
+### Update your Layout
+
+Update your Shared/_Layout.cshtml and call the BreadCrumbs ViewComponent wherever you want the breadcrumbs to appear.
+
+```
+
+@(await Component.InvokeAsync<BreadCrumbsViewComponent>())
+
+```
+
+
 ### Adding breadcrumbs
 
 Include the IBreadCrumbService dependency service in your controller. 

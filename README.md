@@ -2,6 +2,9 @@
 
 This small library provides a service that makes it easy to add and customize breadcrumbs.  The idea is to allow you to create a simple list of breadcrumbs using this service that you can render using a component.  What's nice about this approach is that you can add the entire breadcrumb trail in an MVC action method and include the component in your shared _layout.cshtml page.
 
+![Example](/docs/assets/screenshot.png)
+
+
 ## Usage
 
 ### Install

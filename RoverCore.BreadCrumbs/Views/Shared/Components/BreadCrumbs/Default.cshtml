@@ -1,0 +1,40 @@
+﻿@model RoverCore.BreadCrumbs.Models.BreadCrumbViewModel
+
+<nav area-label="breadcrumb">
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        @if (Model?.Home.Url is null)
+        {
+            @Model?.Home.Title
+        }
+        else
+        {
+            <a href="@Model?.Home.Url">
+                @Model?.Home.Title
+            </a>
+        }
+    </li>
+    @if (Model?.Intermediate != null)
+    {
+        foreach (var crumb in Model?.Intermediate!)
+        {
+            if (!String.IsNullOrEmpty(crumb.Url))
+            {
+                <li class="breadcrumb-item">
+                    <a href="@crumb.Url">
+                        <span>@crumb.Title</span>
+                    </a>
+                </li>
+            }
+            else
+            {
+                <li class="breadcrumb-item"><span>@crumb.Title</span></li>
+            }
+        }
+    }
+    @if (Model?.Current != null)
+    {
+        <li class="breadcrumb-item active" aria-current="page"><span>@Model.Current.Title</span></li>
+    }
+</ol>
+</nav>

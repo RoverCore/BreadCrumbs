@@ -11,12 +11,12 @@
     <Description>Breadcrumbs management for the RoverCore template</Description>
     <Copyright>2022</Copyright>
     <Product>RoverCore.BreadCrumbs</Product>
-    <PackageProjectUrl>https://github.com/eahs/RoverCoreBreadCrumbs</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/RoverCore/BreadCrumbs</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <PackageIcon>logo.png</PackageIcon>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
   </PropertyGroup>
 
 	<PropertyGroup>
